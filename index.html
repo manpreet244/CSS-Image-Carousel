@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color :rgb(19, 141, 179);
+        }
+        h1{
+            font-size: 2rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.3rem;
+            text-align: center;
+            color:blue;
+        }
+        .maindiv{
+            width: 70%;
+            height: 400px;
+            position:absolute;
+
+            /* centre an image */
+            left:50%;
+            top:50%; 
+            transform:translate(-50%,-50%); 
+            background-image:url("https://images.pexels.com/photos/4072026/pexels-photo-4072026.jpeg?cs=srgb&dl=pexels-photomix-company-4072026.jpg&fm=jpg");
+            background-size:cover; 
+            box-shadow:1px 2px 10px 5px black;
+            animation: slider 9s infinite linear;
+            }
+
+            @keyframes slider{
+                0%{   background-image:url("https://images.pexels.com/photos/4072026/pexels-photo-4072026.jpeg?cs=srgb&dl=pexels-photomix-company-4072026.jpg&fm=jpg");}
+                35%{ background-image:url("https://images.pexels.com/photos/302478/pexels-photo-302478.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");}
+                75%{background-image:url("https://images.pexels.com/photos/277262/pexels-photo-277262.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");}
+            }
+    </style>
+</head>
+<body>
+    <h1>CSS Carousel</h1>
+    <div class="maindiv"></div>
+    
+</body>
+</html>
